@@ -21,6 +21,7 @@ public class Tut03Cricle {
 
         Tut03Cricle[] circles = new Tut03Cricle[3];//只new了array
         for (int i=0; i<3; i++){
+            //Tut03Cricle circles[i] = new Tut03Cricle(i); 不用，因为已经declare了
             circles[i] = new Tut03Cricle(i); //为数组中的每个元素分配内存空间，不然是null
             double area = circles[i].getArea();
             System.out.println(area);
