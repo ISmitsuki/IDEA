@@ -19,7 +19,7 @@ public class Tut03Cricle {
         System.out.printf("Total %d circles created.\n", Tut03Cricle.numOfCircle);
 
 
-        Tut03Cricle[] circles = new Tut03Cricle[3];
+        Tut03Cricle[] circles = new Tut03Cricle[3];//只new了array
         for (int i=0; i<3; i++){
             circles[i] = new Tut03Cricle(i); //为数组中的每个元素分配内存空间，不然是null
             double area = circles[i].getArea();
