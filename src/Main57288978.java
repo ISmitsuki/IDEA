@@ -21,6 +21,7 @@ public class Main57288978 {
             this.x=x;
             this.y=y;
             this.maze=maze;
+            move();
         }
 
 
@@ -44,10 +45,12 @@ public class Main57288978 {
             else if(previousDirection==3){}
         }
         public void move(){
-            Random rand = new Random();
-            if (rand.nextDouble()<probSameDirection) sameDirection();
-            if ((rand.nextDouble()>=probSameDirection) && rand.nextDouble()<(probSameDirection+probTurnLeft)) turnLeft();
-            if (rand.nextDouble()>=probSameDirection+probTurnLeft) turnRight();
+            if(x!=6 || y!=6){
+                Random rand = new Random();
+                if (rand.nextDouble()<probSameDirection) sameDirection();
+                else if ((rand.nextDouble()>=probSameDirection) && rand.nextDouble()<(probSameDirection+probTurnLeft)) turnLeft();
+                else if (rand.nextDouble()>=probSameDirection+probTurnLeft) turnRight();
+            }
         }
     }
 
