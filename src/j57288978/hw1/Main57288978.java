@@ -2,7 +2,7 @@ package j57288978.hw1;
 
 import java.util.Random;
 
-/*
+/****
 20 results:0.327 0.327 0.328 0.327 0.328
            0.327 0.328 0.328 0.328 0.327
            0.327 0.328 0.327 0.327 0.328
@@ -10,7 +10,7 @@ import java.util.Random;
 average:0.328
 After 1000000 cycles, the results obtained each time are very similar.
 This indicates that Monte Carlo estimation has a high accuracy rate.
- */
+ ****/
 
 public class Main57288978 {
     public static void main(String[] args) {
